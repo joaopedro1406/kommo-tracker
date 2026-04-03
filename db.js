@@ -12,6 +12,7 @@ db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS leads (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     kommo_id    TEXT UNIQUE,
+    name        TEXT,
     phone       TEXT,
     message     TEXT,
     created_at  TEXT
